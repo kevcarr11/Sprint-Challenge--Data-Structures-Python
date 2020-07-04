@@ -13,8 +13,7 @@ f.close()
 
 duplicates = []  # Return the list of duplicates in this data structure
 
-# Replace the nested for loops below with your improvements
-
+# runtime for solution is O(n) 
 cache = LRUCache(10000)
 for name in names_1:
     cache.set(name, name)
@@ -22,7 +21,7 @@ for name in names_2:
     if name in cache.storage:
         duplicates.append(name)
     
-
+# runtime for started code is O(n^2)
 # for name_1 in names_1:
 #     for name_2 in names_2:
 #         if name_1 == name_2:
